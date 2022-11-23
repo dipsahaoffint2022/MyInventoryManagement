@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Add_Product">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Enter Product Details Below"
+        android:textAlignment="center"
+        android:textColor="#AE9595"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Add_Product_Name"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:fontFamily="@font/gamja_flower"
+        android:hint="Enter Product Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Add_Product_Price"
+            android:layout_width="208dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/gamja_flower"
+            android:hint="Enter Product Price per kg or qty"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="1dp"
+            android:layout_height="41dp"
+            android:layout_weight="1"
+            android:text="Rupees"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingRight="100dp">
+
+        <Button
+            android:id="@+id/Add_Product_Button"
+            android:layout_width="197dp"
+            android:layout_height="82dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:fontFamily="@font/butcherman"
+            android:text="Add Inventory"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="399dp"
+        android:layout_height="106dp">
+
+        <TextView
+            android:id="@+id/m_p_price"
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/m_p_name"
+            android:fontFamily="casual"
+            android:paddingTop="25dp"
+            android:text="000"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/m_p_name"
+            android:layout_width="109dp"
+            android:layout_height="match_parent"
+            android:fontFamily="casual"
+            android:paddingTop="25dp"
+            android:text="Default"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/m_p_price"
+            android:fontFamily="@font/butcherman"
+            android:paddingTop="20dp"
+            android:text="₹"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:layout_toRightOf="@id/textView10"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="update"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set"
+            android:layout_marginLeft="29dp"
+            android:layout_toRightOf="@id/textView10"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="delete"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

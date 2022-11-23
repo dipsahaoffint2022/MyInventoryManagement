@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="25dp"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingBottom="25dp">
+
+        <TextView
+            android:id="@+id/Register_Name"
+            android:layout_width="10dp"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:text="Name="
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/Register_Name_Enter"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="enter your name"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        android:paddingBottom="25dp">
+
+        <TextView
+            android:id="@+id/Register_Mail"
+            android:layout_width="42dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:text=" Mail="
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/Register_Mail_Enter"
+            android:layout_width="265dp"
+            android:layout_height="67dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="enter your mail"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColorHighlight="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingBottom="25dp">
+
+        <TextView
+            android:id="@+id/Register_Code"
+            android:layout_width="65dp"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:text="Password="
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/Register_Code_Enter"
+            android:layout_width="195dp"
+            android:layout_height="67dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="enter your password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingBottom="25dp">
+
+        <TextView
+            android:id="@+id/Register_Phone"
+            android:layout_width="27dp"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:text="Phone="
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/Register_Phone_Enter"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="enter your phone"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Login_Button"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:text="Register" />
+</LinearLayout>

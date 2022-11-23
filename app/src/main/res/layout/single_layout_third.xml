@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="261dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="77dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="1dp"
+            android:paddingTop="15dp"
+            android:text="Name="
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/p_name"
+            android:layout_width="319dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            android:layout_toRightOf="@+id/name"
+            android:ems="10"
+            android:hint="enter product name"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="77dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginBottom="3dp"
+            android:paddingTop="10dp"
+            android:text="Price="
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/p_price"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:layout_below="@+id/name"
+            android:layout_marginStart="3dp"
+            android:layout_toRightOf="@+id/textView15"
+            android:ems="10"
+            android:hint="enter the price"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="36dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/name"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="17dp"
+            android:layout_toRightOf="@+id/p_price"
+            android:text="₹"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/p_price"
+            app:layout_constraintTop_toBottomOf="@+id/p_name" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="90dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/textView15"
+            android:paddingTop="10dp"
+            android:text="Quantity="
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.448" />
+
+        <EditText
+            android:id="@+id/p_qty"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p_price"
+            android:layout_marginLeft="-4dp"
+            android:layout_toRightOf="@+id/textView9"
+            android:ems="10"
+            android:hint="enter the quantity"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/p_unit"
+            android:layout_width="63dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/textView13"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/p_qty"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="53dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView13"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="56dp"
+            android:layout_toRightOf="@+id/p_unit"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/p_unit"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView9"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/p_qty"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="set"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView9"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Generate price"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

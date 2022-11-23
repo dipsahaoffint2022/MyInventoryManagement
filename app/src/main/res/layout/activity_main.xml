@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="100dp"
+    android:paddingTop="150dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="196dp"
+        android:layout_height="75dp"
+        android:paddingTop="4dp"
+        android:text="Login" />
+
+    <Space
+        android:layout_width="196dp"
+        android:layout_height="158dp" />
+
+    <Button
+        android:id="@+id/Registration"
+        android:layout_width="196dp"
+        android:layout_height="70dp"
+        android:paddingTop="4dp"
+        android:text="Registration" />
+
+</LinearLayout>
