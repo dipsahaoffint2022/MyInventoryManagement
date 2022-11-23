@@ -6,5 +6,5 @@
 developed using java, and Firebase Database.
 
 
-💬 The full details about the app will be posted after completion of this app development.
+💬 The full details about the making of this app will be posted after completion of this app development.
 
